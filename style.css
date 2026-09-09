@@ -1,0 +1,199 @@
+/* ------------------------------
+   General Styling
+--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ------------------------------
+   Header
+--------------------------------*/
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* ------------------------------
+   Introduction
+--------------------------------*/
+
+.intro {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.intro p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+}
+
+
+/* ------------------------------
+   Project Grid
+--------------------------------*/
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    padding: 40px 0;
+}
+
+
+/* ------------------------------
+   Project Card
+--------------------------------*/
+
+.project-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #1f2937;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #666;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------
+   Button
+--------------------------------*/
+
+.project-card a {
+    display: inline-block;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+
+footer {
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   Mobile Responsive Design
+--------------------------------*/
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
